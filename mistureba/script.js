@@ -55,7 +55,6 @@ let thumbs = [
 let resgatarDivThumbs = document.getElementById("div-thumbs")
 
 resgatarDivThumbs.innerHTML += `
-    <div class="coluna">
         <div class="chamada">
             <div class="div-5">
                 <img class="img-thumb" src="${thumbs[0].imagem}"
@@ -64,7 +63,9 @@ resgatarDivThumbs.innerHTML += `
                 <h5> ${thumbs[0].titulo} </h5>
             </div>
         </div>
-       
+`
+
+resgatarDivThumbs.innerHTML += `
         <div class="chamada">
             <div class="div-7">
                 <img class="img-thumb" src="${thumbs[1].imagem}"
@@ -73,6 +74,5 @@ resgatarDivThumbs.innerHTML += `
                 <h5> ${thumbs[1].titulo} </h5>
             </div>
         </div>
-    </div>
     </div>
 `
