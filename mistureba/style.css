@@ -1,0 +1,59 @@
+.site {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-thumbs {
+    border: solid 2px red;
+    border-radius: 10px;
+
+}
+
+.img-noticia {
+    width: 100px;
+    height: 100px;
+
+}
+
+.img-thumb {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    align-items: start;
+    justify-content: start;
+    padding: 5px;
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+
+.chamada {
+    display: flex
+}
+    
+
+h4 {
+    margin: 0;
+    
+}
+
+p {
+    margin: 0;
+}
+
+.div-2 {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.div-4 {
+    height: 100px;
+    margin-left: 10px;
+}
