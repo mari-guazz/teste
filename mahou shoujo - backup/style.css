@@ -78,16 +78,6 @@ nav > ul > li{
     cursor: pointer;
     color: rgba(248, 0, 165, 0.308);
 }
-.btnMadoka{
-    font-size: 30px;
-    cursor: pointer;
-    color: rgba(248, 0, 165, 0.308);
-}
-.btnShugo{
-    font-size: 30px;
-    cursor: pointer;
-    color: rgba(248, 0, 165, 0.308);
-}
 .favorito {
     color: rgb(248, 0, 165);
 }

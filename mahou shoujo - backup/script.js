@@ -87,15 +87,16 @@ let shugoChara =[
     },
 ]
 
-const resgatarSaylorMoon = document.getElementById("saylorMoon")
+let resgatarSaylorMoon = document.getElementById("saylorMoon")
 
-const resgatarSuperGatinhas = document.getElementById("superGatinhas")
+let resgatarSuperGatinhas = document.getElementById("superGatinhas")
 
-const resgatarMadokaMagica = document.getElementById("madokaMagica")
+let resgatarMadokaMagica = document.getElementById("madokaMagica")
 
-const resgatarShugoChara = document.getElementById("shugoChara")
+let resgatarShugoChara = document.getElementById("shugoChara")
 
-saylorMoon.map((element, index) => 
+for (let index = 0; index < saylorMoon.length; index++) {
+    const element = saylorMoon[index];
     resgatarSaylorMoon.innerHTML += `
     <div class="saylor">
         <div class="imagem">
@@ -106,12 +107,13 @@ saylorMoon.map((element, index) =>
             <i class="bi bi-star-fill btnSaylor"></i>
         </div>
     </div>
-`)
+`
+}
 
+let btnSaylor = document.querySelectorAll('.btnSaylor')
 
-const btnSaylor = document.querySelectorAll('.btnSaylor')
-
-for (const element of btnSaylor) {
+for (let index = 0; index < btnSaylor.length; index++) {
+    const element = btnSaylor[index];
     element.addEventListener('click', function () {
         if (element.classList.contains('favorito')) {
             return element.classList.remove('favorito')
@@ -121,7 +123,8 @@ for (const element of btnSaylor) {
     })
 }
 
-superGatinhas.map((element, index) => 
+for (let index = 0; index < superGatinhas.length; index++) {
+    const element = superGatinhas[index];
     resgatarSuperGatinhas.innerHTML += `
    <div class="tokyo">
         <div class="imagem">
@@ -132,11 +135,13 @@ superGatinhas.map((element, index) =>
             <i class="bi bi-star-fill btnTokyo"></i>
         </div>
     </div>
-    `)
-  
-const btnTokyo = document.querySelectorAll('.btnTokyo')
+    ` 
+}
 
-for (const element of btnTokyo) {
+let btnTokyo = document.querySelectorAll('.btnTokyo')
+
+for (let index = 0; index < btnTokyo.length; index++) {
+    const element = btnTokyo[index];
     element.addEventListener('click', function () {
         if (element.classList.contains('favorito')) {
             return element.classList.remove('favorito')
@@ -146,51 +151,32 @@ for (const element of btnTokyo) {
     })
 }
 
-madokaMagica.map((element, index) => 
+for (let index = 0; index < madokaMagica.length; index++) {
+    const element = madokaMagica[index];
     resgatarMadokaMagica.innerHTML += `
     <div class="madoka">
         <div class="imagem">
             <img class="img-mahou" src="${element.imagem}" alt="notfound">
         </div>
         <div class="dadosMahou">
-            <p class="nome"> ${element.nome} </p>
-            <i class="bi bi-star-fill btnMadoka"></i>
+            <p> ${element.nome} </p>
+            <i class="bi bi-star-fill"></i>
         </div>
     </div>
-    `)   
-
-const btnMadoka = document.querySelectorAll('.btnMadoka')
-
-for (const element of btnMadoka) {
-    element.addEventListener('click', function () {
-        if (element.classList.contains('favorito')) {
-            return element.classList.remove('favorito')
-        }
-
-        element.classList.add('favorito')
-    })
+    `    
 }
-    
-shugoChara.map((element, index) => resgatarShugoChara.innerHTML += `
-    <div class="shugo"> 
+
+for (let index = 0; index < shugoChara.length; index++) {
+    const element = shugoChara[index];
+    resgatarShugoChara.innerHTML += `
+    <div class="shugo">
         <div class="imagem">
-             <img class="img-mahou" src="${element.imagem}" alt="notfound">
+            <img class="img-mahou" src="${element.imagem}" alt="notfound">
         </div>
         <div class="dadosMahou">
-            <p class="nome"> ${element.nome} </p>
-            <i class="bi bi-star-fill btnShugo"></i>
+            <p> ${element.nome} </p>
+            <i class="bi bi-star-fill"></i>
         </div>
     </div>
-`)
-
-const btnShugo = document.querySelectorAll('.btnShugo')
-
-for (const element of btnShugo) {
-    element.addEventListener('click', function () {
-        if (element.classList.contains('favorito')) {
-            return element.classList.remove('favorito')
-        }
-
-        element.classList.add('favorito')
-    })
+    `    
 }
