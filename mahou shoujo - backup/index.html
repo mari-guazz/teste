@@ -1,47 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Garotas Mágicas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Garotas Mágicas</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="site">
-        <div class="flex-column" id="saylorMoon">
-            <h3 class="titles">Saylor Moon</h3>
+    <div class="top-bar">
+        <div class="player-info">
+            <span>🎵 mahou player</span>
+            <span class="separator">|</span>
+            <span>[Sailor Moon]</span>
+            <span class="separator">·</span>
+            <span>Moonlight Densetsu - DALI</span>
+            <span class="separator">|</span>
+            <span>[Sailor Moon]</span>
         </div>
-
-        <div class="flex-column" id="superGatinhas">
-            <h3 class="titles">Super Gatinhas</h3>
+        <div class="player-controls">
+            <button id="playBtn">▶</button>
+            <button id="pauseBtn">⏸</button>
+            <input type="range" class="volume-slider" min="0" max="100" value="80">
         </div>
-
-        <div class="flex-column" id="madokaMagica">
-            <h3 class="titles">Madoka Magica</h3>
-        </div>
-
-        <div class="flex-column" id="shugoChara">
-            <h3 class="titles">Shugo Chara</h3>
-        </div>
-       
     </div>
-    
-    <script type="module" src="script.js"></script>
-</body>
 
-</html>
+    <div class="container">
+        <header class="panel header-panel">
+            <h1 class="main-title">✦ Garotas Mágicas ✦</h1>
+            <p class="subtitle">♡ sailor moon · super gatinhas · madoka magica · shugo chara ♡</p>
+            <nav class="header-nav">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <div class="main-layout">
+            <aside class="sidebar">
+                <div class="panel profile-panel">
+                    <h2>Garotas Mágicas</h2>
+                    <p class="hearts">✿ ♡ ✿</p>
+                    <small class="tagline">★ mahou shoujo ★</small>
+                </div>
+
+                <div class="panel nav-panel">
+                    <h3>✦ NAVEGAR</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sailor Moon</a></li>
+                        <li><a href="#">Super Gatinhas</a></li>
+                        <li><a href="#">Madoka Magica</a></li>
+                        <li><a href="#">Shugo Chara</a></li>
+                    </ul>
+                </div>
+
+                <div class="panel badges-panel">
+                    <h3>✦ BADGES</h3>
+                    <div class="badge b-pink">sailor moon fan</div>
+                    <div class="badge b-purple">magical girl</div>
+                    <div class="badge b-blue">mahou shoujo</div>
+                    <div class="badge b-green">anime lover</div>
+                    <div class="badge b-yellow">kawaii</div>
+                </div>
+
+                <div class="panel playing-panel">
+                    <h3>✦ NOW PLAYING</h3>
+                    <p class="song-title">Moonlight Densetsu</p>
+                    <p class="song-artist">DALI</p>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div class="panel welcome-panel">
+                    <h2>✦ Garotas Mágicas ✦</h2>
+                    <div class="welcome-text">
+                        <p>Bem-vinda ao meu cantinho sobre mahou shoujo! ♡</p>
+                        <p>Aqui você encontra as guerreiras mágicas mais amadas do anime!</p>
+                        <p>Clique nos nomes para ver a página de cada personagem ✿</p>
+                        <p class="small-list">sailor moon • super gatinhas • madoka magica • shugo chara</p>
+                    </div>
+                </div>
+
+                <div class="panel grid-panel">
+                    <div class="character-grid">
+                        <div class="grid-column">
+                            <h3 class="col-title"><span class="icon">🌙</span> Saylor<br>Moon</h3>
+                            <div class="character-item" data-name="Sailor Moon">
+                                <img class="avatar" src="https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/05/Sailor-Moon-6.webp?fit=1200%2C700&ssl=1" alt="Sailor Moon">
+                                <div class="char-info">
+                                    <span class="char-name">Sailor Moon</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Sailor Mercury">
+                                <img class="avatar" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/sailor-mercury.jpg" alt="Sailor Mercury">
+                                <div class="char-info">
+                                    <span class="char-name">Sailor Mercury</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Sailor Mars">
+                                <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpm8D7yv4kw1wkPbpaRBL0c057M8u2hcJ45B2LKV1XqzSjnLePFRBChqEbrHwzNtHD1Sk&usqp=CAU" alt="Sailor Mars">
+                                <div class="char-info">
+                                    <span class="char-name">Sailor Mars</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Sailor Jupiter">
+                                <img class="avatar" src="https://www.animeunited.com.br/oomtumtu/2024/09/kudasai_sailormoon.jpg" alt="Sailor Jupiter">
+                                <div class="char-info">
+                                    <span class="char-name">Sailor Jupiter</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Sailor Venus">
+                                <img class="avatar" src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2023/12/sailor-moon-inteligencia-artificail-atrevida-sailor-venus.jpg" alt="Sailor Venus">
+                                <div class="char-info">
+                                    <span class="char-name">Sailor Venus</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-column">
+                            <h3 class="col-title"><span class="icon">🐱</span> Super<br>Gatinhas</h3>
+                            <div class="character-item" data-name="Ichigo Momomiya">
+                                <img class="avatar" src="https://i.pinimg.com/736x/0a/c7/a1/0ac7a194474ae18425198efe8e7bb5c3.jpg" alt="Ichigo Momomiya">
+                                <div class="char-info">
+                                    <span class="char-name">Ichigo Momomiya</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Minto Aizawa">
+                                <img class="avatar" src="https://pbs.twimg.com/profile_images/1421085527/mint_12_400x400.jpg" alt="Minto Aizawa">
+                                <div class="char-info">
+                                    <span class="char-name">Minto Aizawa</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Lettuce Midorikawa">
+                                <img class="avatar" src="https://static.wikia.nocookie.net/tokyomewmewfanon/images/8/8f/Lettuce_Headshot_1.png" alt="Lettuce Midorikawa">
+                                <div class="char-info">
+                                    <span class="char-name">Lettuce Midorikawa</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Pudding Fong">
+                                <img class="avatar" src="https://cdn.myanimelist.net/r/200x268/images/characters/11/11277.jpg?s=babc48ff4d7eb30a2394356147ca6776" alt="Pudding Fong">
+                                <div class="char-info">
+                                    <span class="char-name">Pudding Fong</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Zakuro Fujiwara">
+                                <img class="avatar" src="https://i.pinimg.com/736x/c8/a1/f0/c8a1f0ffd7eee6fec1c5a0ab2aa54e98.jpg" alt="Zakuro Fujiwara">
+                                <div class="char-info">
+                                    <span class="char-name">Zakuro Fujiwara</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-column">
+                            <h3 class="col-title"><span class="icon">✨</span> Madoka<br>Magica</h3>
+                            <div class="character-item" data-name="Madoka Kaname">
+                                <img class="avatar" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxFXy-VIUb-MW7BfqMlpIGEC3L7_68rS-5a2X_V8LizrSVIwpz" alt="Madoka Kaname">
+                                <div class="char-info">
+                                    <span class="char-name">Madoka Kaname</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Sayaka Miki">
+                                <img class="avatar" src="https://image.cdn2.seaart.ai/static/e9453ab302025b21ddd3e38957dd8100/1705595398540/b3a134f21c7eadb46ffca0daff6c2504_low.webp" alt="Sayaka Miki">
+                                <div class="char-info">
+                                    <span class="char-name">Sayaka Miki</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Mami Tomoe">
+                                <img class="avatar" src="https://image.cdn2.seaart.ai/static/1a88735699c34778ec69820ae6d84ab5/1705595404543/fca6b408da9760ce409ecc0cfb623062_low.webp" alt="Mami Tomoe">
+                                <div class="char-info">
+                                    <span class="char-name">Mami Tomoe</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Kyoko Sakura">
+                                <img class="avatar" src="https://i.pinimg.com/originals/39/60/e1/3960e1161edea5d1b233f8806b4ec13a.jpg" alt="Kyoko Sakura">
+                                <div class="char-info">
+                                    <span class="char-name">Kyoko Sakura</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Homura Akemi">
+                                <img class="avatar" src="https://s4.anilist.co/file/anilistcdn/character/large/b38005-oJWeDTg8yvUg.jpg" alt="Homura Akemi">
+                                <div class="char-info">
+                                    <span class="char-name">Homura Akemi</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-column">
+                            <h3 class="col-title"><span class="icon">💫</span> Shugo<br>Chara</h3>
+                            <div class="character-item" data-name="Hinamori Amu">
+                                <img class="avatar" src="https://www.nautiljon.com/images/perso/00/07/amu_hinamori_3170.webp" alt="Hinamori Amu">
+                                <div class="char-info">
+                                    <span class="char-name">Hinamori Amu</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Hotori Tadase">
+                                <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5wTc5xcMN2A49LY8kH1bB1EB4Hk88ffmBEg&s" alt="Hotori Tadase">
+                                <div class="char-info">
+                                    <span class="char-name">Hotori Tadase</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Yuki Yaya">
+                                <img class="avatar" src="https://i1.sndcdn.com/artworks-000072310498-ypw7ha-t500x500.jpg" alt="Yuki Yaya">
+                                <div class="char-info">
+                                    <span class="char-name">Yuki Yaya</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Nadeshiko Fujisaki">
+                                <img class="avatar" src="https://i1.sndcdn.com/artworks-000043813048-6p5dnc-t500x500.jpg" alt="Nadeshiko Fujisaki">
+                                <div class="char-info">
+                                    <span class="char-name">Nadeshiko Fujisaki</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                            <div class="character-item" data-name="Kukai Soma">
+                                <img class="avatar" src="https://www.nautiljon.com/images/perso/00/87/kukai_soma_5478.webp" alt="Kukai Soma">
+                                <div class="char-info">
+                                    <span class="char-name">Kukai Soma</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <footer class="footer">
+            <p>obrigada pela visita ✦</p>
+            <p>✧ feito com amor ✧ | ♡ mahou shoujo para sempre ♡</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html
